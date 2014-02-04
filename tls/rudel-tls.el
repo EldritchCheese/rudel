@@ -258,8 +258,9 @@ support STARTTLS behavior.")
 
   (oset this :version rudel-tls-version)
 
-  (unless rudel-tls-client-program
-    (error "Required program 'gnutls-cli' not available")))
+  ;; (unless rudel-tls-client-program
+  ;;   (error "Required program 'gnutls-cli' not available"))
+  )
 
 (defvar rudel-tls-ask-connect-info-host-history nil
   "History of hosts read by TLS backend's `rudel-ask-connect-info'.")
